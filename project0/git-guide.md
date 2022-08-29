@@ -26,3 +26,26 @@ list of files in local folder that have changes that need to be committed
 **push**
 - uploads local repository content to a remote repository (such as GitHub)
 - git push <repo_name> <branch_name>
+
+**fetch**
+- downloads content from the remote repository... it does not force to merge the changes into 
+the repository, it just shows the progression of the central history 
+- git fetch <branch_name>
+
+**merge**
+- combines multiple sequences of commits into one unified history. In frequent cases, merge is used to 
+combine two branches
+- git merge <branch_name>
+
+**pull** 
+- combination of git fetch + git merge. fetch updates the remote tracking branches while merge will
+update your current branch with any new commits on the remote tracking branch
+- git pull <branch_name>
+
+**branch**
+- creates a new branch, a separate version of the main repository
+- git branch <branch_name>
+
+**checkout**
+- switch branches 
+- get checkout <branch_name>
