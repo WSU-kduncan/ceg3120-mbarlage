@@ -49,3 +49,18 @@ update your current branch with any new commits on the remote tracking branch
 **checkout**
 - switch branches 
 - get checkout <branch_name>
+
+**.git folder**
+- logs all commit history and other information required for your remote repository and version control
+
+**.gitignore file**
+- holds intentionally untracked files that Git should ignore 
+
+**pull requests**
+- event in Git where a contributor asks a maintainer of a Git repository to review code they want to merge into a project
+
+**SSH Authentication into Git Repos** 
+1. Create a key Pair
+2. Save the private key on your local machine, add the public key to GitHub in settings
+- ssh-keygen command generates the key pair 
+- ssh user_name@host(IP/Domain_name) instructs the system to establish secure connection with the host machine 
