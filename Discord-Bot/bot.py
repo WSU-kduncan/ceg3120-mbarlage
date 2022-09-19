@@ -57,11 +57,12 @@ async def on_message(message):
         await message.channel.send(response)
         if message.content == 'yes':
             await message.channel.send(response2)
-    if message.content == 'dogs'
+
+    if message.content == 'dogs':
         print("dogs detected in server message")
         print("responding with: image")
-        await channel.send(file=discord.File('hercules.png'))
-        await channel.send(file=discord.File('oreo.png'))
+        await message.channel.send(file=discord.File('/home/ubuntu/ceg3120-mbarlage/hercules.png'))
+        await message.channel.send(file=discord.File('/home/ubuntu/ceg3120-mbarlage/oreo.png'))
 
 
 client.run(TOKEN)
