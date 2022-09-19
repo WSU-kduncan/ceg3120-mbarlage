@@ -41,27 +41,12 @@ async def on_message(message):
         'A common mistake that people make when trying to design something completely foolproof is to underestimate the ingenuity of complete fools.',
     ]
 
-    spongebob_quote = "Is mayonaise an instrument?"
-    response2 = ":)"
 
     if message.content == 'towel!':
         print("towel! detected in server message")
         response = random.choice(hitchhiker_quotes)
         print("repsonding with: " + response)
         await message.channel.send(response)
-
-    if message.content == 'spongebob':
-        print("spongebob detected in server message")
-        response = spongebob_quote
-        print("responding with: " + response)
-        await message.channel.send(response)
-        if message.content == 'yes':
-            await message.channel.send(response2)
-    if message.content == 'dogs'
-        print("dogs detected in server message")
-        print("responding with: image")
-        await channel.send(file=discord.File('hercules.png'))
-        await channel.send(file=discord.File('oreo.png'))
 
 
 client.run(TOKEN)
