@@ -48,5 +48,22 @@ async def on_message(message):
         print("repsonding with: " + response)
         await message.channel.send(response)
 
+<<<<<<< HEAD
+=======
+    if message.content == 'spongebob':
+        print("spongebob detected in server message")
+        response = spongebob_quote
+        print("responding with: " + response)
+        await message.channel.send(response)
+        if message.content == 'yes':
+            await message.channel.send(response2)
+
+    if message.content == 'dogs':
+        print("dogs detected in server message")
+        print("responding with: image")
+        await message.channel.send(file=discord.File('/home/ubuntu/ceg3120-mbarlage/hercules.png'))
+        await message.channel.send(file=discord.File('/home/ubuntu/ceg3120-mbarlage/oreo.png'))
+
+>>>>>>> aws
 
 client.run(TOKEN)
