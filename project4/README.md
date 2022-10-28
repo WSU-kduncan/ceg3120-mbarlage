@@ -40,11 +40,31 @@
 4. **_Webserver 1 & 2 configuration & documentation requirements_**
    - How set up a webserver
      - What file(s) were modified & their location
+     ```
+     On each server, the /etc/hosts and /var/www/html/index.html files were modified. 
+     ```
      - What configuration(s) were set (if any)
+     ```
+     For /etc/hosts this was added:
+     3.95.129.141 proxy
+     ```
      - Where site content files were located (and why)
+     ```
+     The site content is located in /var/www/html/index.html. This is the default location.
+     ```
      - How to restart the service after a configuration change
+     ```
+     $ sudo systemctl restart apache2.service
+     ```
      - Resources used (websites)
-5. From the browser, when connecting to the proxy server, take two screenshots.
-   - one screenshot that shows content from "server 1"
-   - one screenshot that shows content from "server 2"
+     ```
+     https://linuxhint.com/how-to-install-and-configure-haproxy-load-balancer-in-linux/
+     ```
+5. ![server 1](images/server1-ceg3120.PNG) <br />
+![server 2](images/server2-ceg3120.PNG)
+   
+  
 6. (Optional) - link to your proxy so I can click it.
+```
+http://3.95.129.141/
+```
